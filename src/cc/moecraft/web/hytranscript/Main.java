@@ -18,6 +18,13 @@ public class Main implements ServletContextListener
         return instance;
     }
 
+    PostsDatabase database;
+
+    public static PostsDatabase database()
+    {
+        return getInstance().database;
+    }
+
     @Override
     public void contextDestroyed(ServletContextEvent arg0)
     {
@@ -32,6 +39,6 @@ public class Main implements ServletContextListener
 
         instance = this;
 
-        System.out.println(1);
+        database = new PostsDatabase();
     }
 }

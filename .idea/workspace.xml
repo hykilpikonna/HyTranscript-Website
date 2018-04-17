@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="" />
+    <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +22,7 @@
             <file leaf-file-name="Song.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Song.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="418">
+                  <state relative-caret-position="-505">
                     <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
                     <folding>
                       <element signature="e#1016#1017#0" expanded="true" />
@@ -64,24 +68,40 @@
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsDatabase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PostsDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="2166">
+              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#283#284#0" expanded="true" />
                 <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
+                <element signature="e#2577#2578#0" expanded="true" />
+                <element signature="e#3560#3561#0" expanded="true" />
+                <element signature="e#3595#3596#0" expanded="true" />
+                <element signature="e#2729#2730#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4028">
+              <caret line="124" column="76" lean-forward="true" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -98,26 +118,29 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
+      <find>\) \{</find>
       <find>(&quot;</find>
       <find>getString</find>
       <find>),</find>
     </findStrings>
     <replaceStrings>
       <replace>)\n\t{</replace>
-      <replace />
+      <replace>(path + &quot;</replace>
       <replace>set</replace>
       <replace>);</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Difficulty.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/DownloadLink.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Song.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java" />
+        <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" />
       </list>
     </option>
   </component>
@@ -133,6 +156,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -363,12 +387,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523831799994</updated>
       <workItem from="1523831806265" duration="4542000" />
-      <workItem from="1523987430331" duration="1201000" />
+      <workItem from="1523987430331" duration="2937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5743000" />
+    <option name="totallyTimeSpent" value="7479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -381,10 +405,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="10" visible="true" weight="0.32997763" />
+      <window_info anchor="bottom" id="Application Servers" order="10" visible="true" weight="0.33034715" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
@@ -425,6 +449,8 @@
           <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -437,6 +463,11 @@
             <element signature="imports" expanded="true" />
             <element signature="e#283#284#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#3560#3561#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -475,16 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Difficulty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -503,9 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/DownloadLink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -515,7 +533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Song.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="-505">
           <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#1016#1017#0" expanded="true" />
@@ -542,13 +560,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        <state relative-caret-position="2166">
+          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#283#284#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#3560#3561#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4028">
+          <caret line="124" column="76" lean-forward="true" selection-start-line="124" selection-start-column="76" selection-end-line="124" selection-end-column="76" />
         </state>
       </provider>
     </entry>

@@ -12,14 +12,16 @@ import java.util.ArrayList;
  */
 public class PostsDatabase extends Config
 {
+    private int currentIndex;
+
     public PostsDatabase()
     {
         super("0.0.1", "HyTranscript", "PostsDatabase", "hydb", false, true, false);
     }
 
-    public Song getSong(String path)
+    public Song getSong(int index)
     {
-        String finalPath = path + ".";
+        String finalPath = index + ".";
 
         ArrayList<String> keys = getKeys(finalPath + "Links");
         ArrayList<DownloadLink> links = new ArrayList<>();
@@ -38,9 +40,16 @@ public class PostsDatabase extends Config
         );
     }
 
-    public void setSong(String path, Song song)
+    public void setSong(Song song)
     {
-        String finalPath = path + ".";
+        currentIndex += 1;
+        setSong(currentIndex, song);
+        saveCurrentIndex();
+    }
+
+    private void setSong(int index, Song song)
+    {
+        String finalPath = index + ".";
 
         set(finalPath + "ImageURL", song.getImageURL());
         set(finalPath + "Name", song.getName());
@@ -57,6 +66,8 @@ public class PostsDatabase extends Config
             set(layerPath + "Domain", song.getLinks().get(i).getDomain().name());
             set(layerPath + "URL", song.getLinks().get(i).getUrl());
         }
+
+        save();
     }
 
     private DownloadLink getDownloadLink(String path)
@@ -71,7 +82,7 @@ public class PostsDatabase extends Config
     @Override
     public void readConfig()
     {
-
+        currentIndex = getInt("CurrentIndex");
     }
 
     @Override
@@ -83,6 +94,31 @@ public class PostsDatabase extends Config
     @Override
     public void writeDefaultConfig()
     {
+        saveCurrentIndex();
 
+        ArrayList<DownloadLink> links = new ArrayList<>();
+        links.add(new DownloadLink(DownloadLink.LinkType.Video, DownloadLink.LinkDomain.Youtube, "youtube.com"));
+        links.add(new DownloadLink(DownloadLink.LinkType.Video, DownloadLink.LinkDomain.Bilibili, "bilibili.com"));
+        links.add(new DownloadLink(DownloadLink.LinkType.Sheet, DownloadLink.LinkDomain.Flat, "flat.io"));
+        links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.GoogleDrive, "drive.google.com"));
+        links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.DuPan, "pan.baidu.com"));
+
+        setSong(new Song("UNDIFINED", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, 124, links));
+    }
+
+    public int getCurrentIndex()
+    {
+        return currentIndex;
+    }
+
+    public void setCurrentIndex(int currentIndex)
+    {
+        this.currentIndex = currentIndex;
+    }
+
+    public void saveCurrentIndex()
+    {
+        set("CurrentIndex", currentIndex);
+        save();
     }
 }
