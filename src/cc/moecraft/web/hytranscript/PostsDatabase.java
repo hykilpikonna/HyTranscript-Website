@@ -37,12 +37,10 @@ public class PostsDatabase extends Config
     {
         String finalPath = "S" + index + ".";
 
-        System.out.println("Links Path = " + finalPath + "Links");
-
         ArrayList<String> keys = getKeys(finalPath + "Links");
         ArrayList<DownloadLink> links = new ArrayList<>();
 
-        keys.forEach(key -> links.add(getDownloadLink(finalPath + "Links.L" + key)));
+        keys.forEach(key -> links.add(getDownloadLink(finalPath + "Links." + key)));
 
         return new Song(
                 getString(finalPath + "ImageURL"),
@@ -88,10 +86,12 @@ public class PostsDatabase extends Config
 
     private DownloadLink getDownloadLink(String path)
     {
+        path += ".";
+
         return new DownloadLink(
-                DownloadLink.LinkType.valueOf(getString("Type")),
-                DownloadLink.LinkDomain.valueOf(getString("Domain")),
-                getString("URL")
+                DownloadLink.LinkType.valueOf(getString(path + "Type")),
+                DownloadLink.LinkDomain.valueOf(getString(path + "Domain")),
+                getString(path + "URL")
         );
     }
 
