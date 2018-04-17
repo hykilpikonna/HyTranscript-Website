@@ -240,10 +240,7 @@
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <article class="entry-item kopa-item-course-01">
                                             <div class="entry-thumb">
-                                                <a href="#">
-                                                    <img src="<%=song.getImageURL()%>" alt="">
-                                                    <i class="fa fa-link"></i>
-                                                </a>
+                                               <img src="<%=song.getImageURL()%>" alt="">
                                             </div>
                                             <div class="entry-content">
                                                 <a href="#" class="course-category"><%=song.getName()%></a>
