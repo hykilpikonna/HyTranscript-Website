@@ -12,18 +12,20 @@ import java.util.ArrayList;
  */
 public class PostsDatabase extends Config
 {
-    private int currentIndex;
+    private int nextIndex;
 
     public PostsDatabase()
     {
         super("0.0.1", "HyTranscript", "PostsDatabase", "hydb", false, true, false);
+
+        System.out.println("HyTranscript Database File Path = " + getConfigFile().getAbsolutePath());
     }
 
     public ArrayList<Song> getSongs()
     {
         ArrayList<Song> result = new ArrayList<>();
 
-        for (int i = 0; i < currentIndex; i++)
+        for (int i = 0; i < nextIndex; i++)
         {
             result.add(getSong(i));
         }
@@ -33,12 +35,14 @@ public class PostsDatabase extends Config
 
     public Song getSong(int index)
     {
-        String finalPath = index + ".";
+        String finalPath = "S" + index + ".";
+
+        System.out.println("Links Path = " + finalPath + "Links");
 
         ArrayList<String> keys = getKeys(finalPath + "Links");
         ArrayList<DownloadLink> links = new ArrayList<>();
 
-        keys.forEach(key -> links.add(getDownloadLink(finalPath + "Links." + key)));
+        keys.forEach(key -> links.add(getDownloadLink(finalPath + "Links.L" + key)));
 
         return new Song(
                 getString(finalPath + "ImageURL"),
@@ -54,14 +58,14 @@ public class PostsDatabase extends Config
 
     public void setSong(Song song)
     {
-        currentIndex += 1;
-        setSong(currentIndex, song);
+        setSong(nextIndex, song);
+        nextIndex += 1;
         saveCurrentIndex();
     }
 
     private void setSong(int index, Song song)
     {
-        String finalPath = index + ".";
+        String finalPath = "S" + index + ".";
 
         set(finalPath + "ImageURL", song.getImageURL());
         set(finalPath + "Name", song.getName());
@@ -73,7 +77,7 @@ public class PostsDatabase extends Config
 
         for (int i = 0; i < song.getLinks().size(); i++)
         {
-            String layerPath = finalPath + "Links." + i + ".";
+            String layerPath = finalPath + "Links.L" + i + ".";
             set(layerPath + "Type", song.getLinks().get(i).getType().name());
             set(layerPath + "Domain", song.getLinks().get(i).getDomain().name());
             set(layerPath + "URL", song.getLinks().get(i).getUrl());
@@ -94,7 +98,7 @@ public class PostsDatabase extends Config
     @Override
     public void readConfig()
     {
-        currentIndex = getInt("CurrentIndex");
+        nextIndex = getInt("CurrentIndex");
     }
 
     @Override
@@ -118,19 +122,19 @@ public class PostsDatabase extends Config
         setSong(new Song("http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, 124, links));
     }
 
-    public int getCurrentIndex()
+    public int getNextIndex()
     {
-        return currentIndex;
+        return nextIndex;
     }
 
-    public void setCurrentIndex(int currentIndex)
+    public void setNextIndex(int nextIndex)
     {
-        this.currentIndex = currentIndex;
+        this.nextIndex = nextIndex;
     }
 
     public void saveCurrentIndex()
     {
-        set("CurrentIndex", currentIndex);
+        set("CurrentIndex", nextIndex);
         save();
     }
 }
