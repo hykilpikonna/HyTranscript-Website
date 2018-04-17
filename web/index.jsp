@@ -1,6 +1,7 @@
 ﻿<%@ page import="cc.moecraft.web.hytranscript.Song" %>
 <%@ page import="cc.moecraft.web.hytranscript.Main" %>
 <%@ page import="cc.moecraft.web.hytranscript.DownloadLink" %>
+<%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <!-- 直接复制个模板啊哈哈哈哈 -->
 <!-- 这是英文网页 -->
@@ -227,9 +228,11 @@
 							<div class="widget-content module-listcourse-04">
 								<div class="row">
 									<%
-                                        for (int i = 0; i < Main.database().getSongs().size(); i++)
+                                        ArrayList<Song> songs = Main.database().getSongs();
+
+                                        for (int i = 0; i < songs.size(); i++)
                                         {
-                                            Song song = Main.database().getSongs().get(i);
+                                            Song song = songs.get(i);
 
                                             int minute = song.getTimeInSeconds() / 60;
 

@@ -16,7 +16,7 @@ public class PostsDatabase extends Config
 
     public PostsDatabase()
     {
-        super("0.0.1", "HyTranscript", "PostsDatabase", "hydb", false, true, false);
+        super("0.0.1", "HyTranscript", "PostsDatabase", "hydb", false, true, true);
 
         System.out.println("HyTranscript Database File Path = " + getConfigFile().getAbsolutePath());
     }
