@@ -6981,7 +6981,10 @@ aside.sidebar .kopa-widget-advanced_search .widget-title:before {
 }
 
 .kopa-item-course-01 .course-detail, .kopa-item-course-02 .course-detail, .kopa-item-course-03 .course-detail {
-	padding: 0 30px;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-left: 20px;
+	padding-bottom: 0;
 	background-color: #f5f5f5;
 	border-top: 1px solid #e5e4e9;
 	text-align: center;
@@ -7002,16 +7005,16 @@ aside.sidebar .kopa-widget-advanced_search .widget-title:before {
 }
 
 .kopa-item-course-01 .course-detail li:first-child, .kopa-item-course-02 .course-detail li:first-child, .kopa-item-course-03 .course-detail li:first-child {
-	width: 92px;
+	width: 80px;
 	text-align: left;
 }
 
 .kopa-item-course-01 .course-detail li:nth-child(2), .kopa-item-course-02 .course-detail li:nth-child(2), .kopa-item-course-03 .course-detail li:nth-child(2) {
-	width: 126px;
+	width: 110px;
 }
 
 .kopa-item-course-01 .course-detail li:last-child, .kopa-item-course-02 .course-detail li:last-child, .kopa-item-course-03 .course-detail li:last-child {
-	width: 92px;
+	width: 140px;
 	border: none;
 }
 

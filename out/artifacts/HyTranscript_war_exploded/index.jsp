@@ -1,4 +1,4 @@
-﻿<%@ page import="cc.moecraft.web.hytranscript.Song" %>
+<%@ page import="cc.moecraft.web.hytranscript.Song" %>
 <%@ page import="cc.moecraft.web.hytranscript.Main" %>
 <%@ page import="cc.moecraft.web.hytranscript.DownloadLink" %>
 <%@ page import="java.util.ArrayList" %>
@@ -262,8 +262,9 @@
                                                         <%=song.getDifficulty().toString()%>
                                                     </li>
                                                     <li>
-                                                        <i class="fa fa-thumbs-o-up"></i>
-                                                        <%=song.getLikes()%></li>
+                                                        <i class="fa fa-calendar"></i>
+                                                        <%=song.getDateReleased()%>
+                                                    </li>
                                                 </ul>
                                                 <div class="course-price">
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%=i%>" aria-expanded="false" aria-controls="collapse<%=i%>">

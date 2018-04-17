@@ -22,11 +22,11 @@ public class Song
 
     private Difficulty difficulty;
 
-    private int likes;
+    private String dateReleased;
 
     private ArrayList<DownloadLink> links;
 
-    public Song(String imageURL, String name, String subtitle, String author, int timeInSeconds, Difficulty difficulty, int likes, ArrayList<DownloadLink> links)
+    public Song(String imageURL, String name, String subtitle, String author, int timeInSeconds, Difficulty difficulty, String dateReleased, ArrayList<DownloadLink> links)
     {
         this.imageURL = imageURL;
         this.name = name;
@@ -34,7 +34,7 @@ public class Song
         this.author = author;
         this.timeInSeconds = timeInSeconds;
         this.difficulty = difficulty;
-        this.likes = likes;
+        this.dateReleased = dateReleased;
         this.links = links;
     }
 
@@ -98,14 +98,14 @@ public class Song
         this.difficulty = difficulty;
     }
 
-    public int getLikes()
+    public String getDateReleased()
     {
-        return likes;
+        return dateReleased;
     }
 
-    public void setLikes(int likes)
+    public void setDateReleased(String dateReleased)
     {
-        this.likes = likes;
+        this.dateReleased = dateReleased;
     }
 
     public ArrayList<DownloadLink> getLinks()

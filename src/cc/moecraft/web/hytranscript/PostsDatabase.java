@@ -49,7 +49,7 @@ public class PostsDatabase extends Config
                 getString(finalPath + "Author"),
                 getInt(finalPath + "TimeInSeconds"),
                 Difficulty.valueOf(getString(finalPath + "Difficulty")),
-                getInt(finalPath + "Likes"),
+                getString(finalPath + "DateReleased"),
                 links
         );
     }
@@ -71,7 +71,7 @@ public class PostsDatabase extends Config
         set(finalPath + "Author", song.getAuthor());
         set(finalPath + "TimeInSeconds", song.getTimeInSeconds());
         set(finalPath + "Difficulty", song.getDifficulty().toString());
-        set(finalPath + "Likes", song.getLikes());
+        set(finalPath + "DateReleased", song.getDateReleased());
 
         for (int i = 0; i < song.getLinks().size(); i++)
         {
@@ -119,7 +119,7 @@ public class PostsDatabase extends Config
         links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.GoogleDrive, "drive.google.com"));
         links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.DuPan, "pan.baidu.com"));
 
-        setSong(new Song("http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, 124, links));
+        setSong(new Song("http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, "2018-04-17", links));
     }
 
     public int getNextIndex()
