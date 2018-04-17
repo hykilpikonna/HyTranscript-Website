@@ -19,6 +19,18 @@ public class PostsDatabase extends Config
         super("0.0.1", "HyTranscript", "PostsDatabase", "hydb", false, true, false);
     }
 
+    public ArrayList<Song> getSongs()
+    {
+        ArrayList<Song> result = new ArrayList<>();
+
+        for (int i = 0; i < currentIndex; i++)
+        {
+            result.add(getSong(i));
+        }
+
+        return result;
+    }
+
     public Song getSong(int index)
     {
         String finalPath = index + ".";
@@ -103,7 +115,7 @@ public class PostsDatabase extends Config
         links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.GoogleDrive, "drive.google.com"));
         links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.DuPan, "pan.baidu.com"));
 
-        setSong(new Song("UNDIFINED", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, 124, links));
+        setSong(new Song("http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, 124, links));
     }
 
     public int getCurrentIndex()

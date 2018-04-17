@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<%@ page import="cc.moecraft.web.hytranscript.Song" %>
+<%@ page import="cc.moecraft.web.hytranscript.Main" %>
+<%@ page import="cc.moecraft.web.hytranscript.DownloadLink" %>
+<!DOCTYPE html>
 <!-- 直接复制个模板啊哈哈哈哈 -->
 <!-- 这是英文网页 -->
 <html lang="en">
@@ -41,7 +44,7 @@
 	</head>
 	<body>
 		<div id="main-container">
-			<header class="kopa-header-01">
+			<header id="0-header" class="kopa-header-01">
 				<div class="container">
 					<div class="top-header">
 						<!--div class="kopa-login">
@@ -223,55 +226,71 @@
 							</header>
 							<div class="widget-content module-listcourse-04">
 								<div class="row">
-									<div class="col-md-4 col-sm-4 col-xs-12">
-										<article class="entry-item kopa-item-course-01">
-											<div class="entry-thumb">
-												<a href="#">
-													<img src="IMG LOCATION" alt="">
-													<i class="fa fa-link"></i>
-												</a>
-											</div>
-											<div class="entry-content">
-												<a href="#" class="course-category">NAME</a>
-												<h4 class="entry-title">
-													<a href="#">SUBTITLE</a>
-												</h4>
-												<a href="#" class="course-author">AUTHOR</a>
-												
-												<ul class="course-detail">
-													<li>
-														<i class="fa fa-clock-o"></i>
-														3:54
-													</li>
-													<li>
-														<i class="fa fa-flash"></i>
-														Expert
-													</li>
-													<li>
-														<i class="fa fa-thumbs-o-up"></i>
-														1000
-													</li>
-												</ul>
-												<div class="course-price">
-													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-														<span class="price">Download Links:</span>
-													</a>
-												</div>
-												<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-													<div class="panel-body">
-														<ul>
-															<li><a href="#YOUTUBE LINK">Video - Youtube.com</a></li>
-															<li><a href="#BILIBILI LINK">Video - Bilibili.com</a></li>
-															<li><a href="#FLAT LINK">Sheet - Flat.io</a></li>
-															<li><a href="#DRIVE LINK">Misc. - Drive.google.com</a></li>
-															<li><a href="#DUPAN LINK">Misc. - Pan.baidu.com</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</article>
-									</div>
-								</div>
+									<%
+                                        for (int i = 0; i < Main.database().getSongs().size(); i++)
+                                        {
+                                            Song song = Main.database().getSongs().get(i);
+
+                                            int minute = song.getTimeInSeconds() / 60;
+
+                                            int restSeconds = song.getTimeInSeconds() - minute * 60;
+
+                                            String time = minute + ":" + restSeconds;
+                                    %>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <article class="entry-item kopa-item-course-01">
+                                            <div class="entry-thumb">
+                                                <a href="#">
+                                                    <img src="<%=song.getImageURL()%>" alt="">
+                                                    <i class="fa fa-link"></i>
+                                                </a>
+                                            </div>
+                                            <div class="entry-content">
+                                                <a href="#" class="course-category"><%=song.getName()%></a>
+                                                <h4 class="entry-title">
+                                                    <a href="#"><%=song.getSubtitle()%></a>
+                                                </h4>
+                                                <a href="#" class="course-author"><%=song.getAuthor()%></a>
+
+                                                <ul class="course-detail">
+                                                    <li>
+                                                        <i class="fa fa-clock-o"></i>
+                                                        <%=time%>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-flash"></i>
+                                                        <%=song.getDifficulty().toString()%>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-thumbs-o-up"></i>
+                                                        <%=song.getLikes()%></li>
+                                                </ul>
+                                                <div class="course-price">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%=i%>" aria-expanded="false" aria-controls="collapse<%=i%>">
+                                                        <span class="price">Download Links:</span>
+                                                    </a>
+                                                </div>
+                                                <div id="collapse<%=i%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="panel-body">
+                                                        <ul>
+                                                            <%
+                                                                for (DownloadLink link : song.getLinks())
+                                                                {
+                                                            %>
+                                                            <li><a href="<%=link.getUrl()%>"><%=link.getType().toString()%> - <%=link.getDomain().toString()%></a></li>
+                                                            <%
+                                                                }
+                                                            %>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <%
+                                        }
+									%>
+                                </div>
 							</div>
 						</div>
 					</div>
@@ -293,71 +312,6 @@
 					<p>ahahahahahahah ok idk what to put here</p>
 				</div>
 			</footer>
-			<!--div class="bottom-sidebar style-01 white-text-style">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-sm-6 col-xs-12 col-md-push-4">
-							<div class="widget kopa-widget-logof">
-								<div class="widget-content">
-									<a href="#"><img src="img/icon/logo-2.png" alt=""></a>
-									<div class="kopa-social-links style-02">
-									    <ul class="clearfix">
-									        <li><a href="#" class="fa fa-facebook"></a></li>
-									        <li><a href="#" class="fa fa-twitter"></a></li>
-									        <li><a href="#" class="fa fa-google-plus"></a></li>
-									        <li><a href="#" class="fa fa-rss"></a></li>
-									    </ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 col-md-pull-4">
-							<div class="widget kopa-widget-tweets">
-								<h3 class="widget-title style-02">RECENT TWEETS</h3>
-								<div class="widget-content module-tweets-01">
-									<ul>
-										<li>
-											<i class="fa fa-twitter"></i>
-											<div class="tweets-detail">
-												<a href="#">
-													<span>@ASCETICDESIGNERS,</span>
-													Next Jobs Fair Will Be Held in Our Campus.
-												</a>
-												<span>5 Mins Ago</span>
-											</div>
-										</li>
-										<li>
-											<i class="fa fa-twitter"></i>
-											<div class="tweets-detail">
-												<a href="#">
-													<span>@ASHIFULPAPPU,</span>
-													Build Your Career at Our Paathshaala Faculties.
-												</a>
-												<span>25 Mins Ago</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="widget kopa-widget-useful">
-								<h3 class="widget-title style-03">useful links</h3>
-								<div class="widget-content">
-									<ul>
-										<li><a href="#">All Our Course</a></li>
-										<li><a href="#">Event Calendar</a></li>
-										<li><a href="#">Customer Support</a></li>
-										<li><a href="#">Career at Paathshaala</a></li>
-										<li><a href="#">Terms & Conditions</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div-->
 		</div>
 	</body>
 </html>
