@@ -93,8 +93,8 @@
 						</div-->
 						<ul>
 							<li />
-							<li><a href="https://www.youtube.com/channel/UCCwz4RuQr1Glln359nuj2vw"><i class="fa fa-youtube-square"></i></a></li>
-							<li><a href="https://github.com/hykilpikonna"><i class="fa fa-github-square"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCCwz4RuQr1Glln359nuj2vw"><i class="fa fa-youtube-play"></i></a></li>
+							<li><a href="https://github.com/hykilpikonna"><i class="fa fa-github"></i></a></li>
 							<li><a href="https://flat.io/hykilpikonna"><i class="fa fa-music"></i></a></li>
 							<li><a href="http://wpa.qq.com/msgrd?v=3&uin=871674895&site=qq&menu=yes"><i class="fa fa-qq"></i></a></li>
 							<!--li><a href="#"><i class="fa fa-wechat"></i></a></li-->
@@ -112,18 +112,23 @@
 							<div class="pull-right">
 								<nav class="kopa-main-menu style-01">
 									<ul>
+										<li><a href="#">&nbsp;</a></li>
+										<li><a href="#">&nbsp;</a></li>
+										<li><a href="#">&nbsp;</a></li>
+										<li><a href="#">&nbsp;</a></li>
 										<li><a href="#1-top"><%=language.get("INDEX-1-TOP-BAR-LINK-1")%></a></li>
 										<li><a href="#3-introduction"><%=language.get("INDEX-1-TOP-BAR-LINK-2")%></a></li>
 										<li><a href="#4-downloads"><%=language.get("INDEX-1-TOP-BAR-LINK-3")%></a></li>
+										<li><i class="fa fa-search"></i></li>
 									</ul>
 								</nav>
-								<div class="kopa-search">
+								<!--div class="kopa-search">
 									<button type="button">
 										<i class="fa fa-search"></i>
 									</button>
 									<input type="text" placeholder="Search..." class="">
 								</div>
-								<!--div class="kopa-hamburger-menu">
+								<div class="kopa-hamburger-menu">
 									<i class="fa fa-bars"></i>
 								</div-->
 							</div>
@@ -140,8 +145,8 @@
 								<div class="content">
 									<h2><%=language.get("INDEX-1-CENTER-TEXT-1")%></h2>
 									<p><%=language.get("INDEX-1-CENTER-TEXT-2")%></p>
-									<a href="#" class="button-01"><%=language.get("INDEX-1-CENTER-BUTTON-1")%></a>
-									<a href="#" class="button-01"><%=language.get("INDEX-1-CENTER-BUTTON-2")%></a>
+									<a href="#3-introduction" class="button-01"><%=language.get("INDEX-1-CENTER-BUTTON-1")%></a>
+									<a href="#4-downloads" class="button-01"><%=language.get("INDEX-1-CENTER-BUTTON-2")%></a>
 								</div>
 							</div>
 						</div>
@@ -198,7 +203,7 @@
 												</div>
 												<div class="entry-content">
 													<h4 class="entry-title">
-														<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-1")%></a>
+														<%=language.get("INDEX-3-CONTENT-TITLE-TEXT-1")%>
 													</h4>
 													<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-1")%></p>
 												</div>
@@ -212,7 +217,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title">
-													<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-2")%></a>
+													<%=language.get("INDEX-3-CONTENT-TITLE-TEXT-2")%>
 												</h4>
 												<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-2")%></p>
 											</div>
@@ -225,7 +230,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title">
-													<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-3")%></a>
+													<%=language.get("INDEX-3-CONTENT-TITLE-TEXT-3")%>
 												</h4>
 												<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-3")%></p>
 											</div>
@@ -238,7 +243,7 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title">
-													<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-4")%></a>
+													<%=language.get("INDEX-3-CONTENT-TITLE-TEXT-4")%>
 												</h4>
 												<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-4")%></p>
 											</div>
