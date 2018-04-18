@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import static cc.moecraft.web.hytranscript.LanguageFileReader.DEFAULT_LANG;
+
 /**
  * 此类由 Hykilpikonna 在 2018/04/18 创建!
  * Created by Hykilpikonna on 2018/04/18!
@@ -13,8 +15,6 @@ import java.util.Map;
 public class PostsDatabaseReader
 {
     private Map<String, PostsDatabase> postsDatabaseFileMap;
-
-    private String defaultLang = "en";
 
     private enum OfficiallySupportedLanguages
     {
@@ -43,7 +43,7 @@ public class PostsDatabaseReader
 
     public String getLang(String original)
     {
-        return !hasLanguageFile(original) ? defaultLang : original;
+        return !hasLanguageFile(original) ? DEFAULT_LANG : original;
     }
 
     private boolean hasLanguageFile(String lang)

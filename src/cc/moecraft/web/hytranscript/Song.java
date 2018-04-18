@@ -117,4 +117,9 @@ public class Song
     {
         this.links = links;
     }
+
+    public enum Difficulty
+    {
+        Easy, Medium, Hard, Expert
+    }
 }

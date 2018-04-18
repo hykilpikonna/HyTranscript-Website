@@ -16,7 +16,7 @@ public class LanguageFileReader
 {
     private Map<String, LanguageFile> languageFileMap;
 
-    private String defaultLang = "en";
+    static final String DEFAULT_LANG = "en";
 
     private enum OfficiallySupportedLanguages
     {
@@ -26,8 +26,6 @@ public class LanguageFileReader
     public LanguageFileReader()
     {
         languageFileMap = new HashMap<>();
-
-
     }
 
     public String get(String lang, String placeholder)
@@ -52,7 +50,7 @@ public class LanguageFileReader
 
     public String getLang(String original)
     {
-        return !hasLanguageFile(original) ? defaultLang : original;
+        return !hasLanguageFile(original) ? DEFAULT_LANG : original;
     }
 
     private boolean hasLanguageFile(String lang)
@@ -190,15 +188,5 @@ public class LanguageFileReader
                 System.out.println("ERROR - This isn't possible.");
             }
         }
-    }
-
-    public Map<String, LanguageFile> getLanguageFileMap()
-    {
-        return languageFileMap;
-    }
-
-    public void setLanguageFileMap(Map<String, LanguageFile> languageFileMap)
-    {
-        this.languageFileMap = languageFileMap;
     }
 }
