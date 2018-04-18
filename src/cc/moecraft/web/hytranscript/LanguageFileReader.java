@@ -71,6 +71,8 @@ public class LanguageFileReader
         {
             super("0.0.1", "HyTranscript", "IndexLanguage@" + lang, "hylang", false, false, true);
             this.lang = lang;
+            System.out.println("Lang = " + lang);
+            checkConfig();
         }
 
         public String get(String placeholder)
@@ -93,6 +95,8 @@ public class LanguageFileReader
         @Override
         public void writeDefaultConfig()
         {
+            if (lang == null) return;
+
             if (lang.equals(OfficiallySupportedLanguages.zh_CN.name()))
             {
                 set("INDEX-1-TOP-BAR-LINK-1", "Top");
