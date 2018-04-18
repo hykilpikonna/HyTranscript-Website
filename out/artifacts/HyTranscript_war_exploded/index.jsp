@@ -14,6 +14,8 @@
     LanguageFileReader.LanguageFile language = Main.language().getFile(s_lang);
 
 	PostsDatabase database = Main.database().getFile(s_lang);
+
+	String font = s_lang.equals("zh") ? "\"Microsoft YaHei UI Light\", STXihei, ¡°»ªÎÄÏ¸ºÚ¡±, ¡°Microsoft YaHei¡±, ¡°Î¢ÈíÑÅºÚ¡±, sans-serif;" : "\"Roboto Slab\", sans-serif;";
 %>
 <!DOCTYPE html>
 <!-- Ö±½Ó¸´ÖÆ¸öÄ£°å°¡¹þ¹þ¹þ¹þ -->
@@ -54,6 +56,22 @@
 		
 		<!-- View Responsive -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			h2
+			{
+				font-family: "Roboto Slab", sans-serif;
+			}
+
+			h1,
+			h3,
+			h4,
+			h5,
+			h6
+			{
+				font-family: <%=font%>
+			}
+		</style>
 
 	</head>
 	<body>

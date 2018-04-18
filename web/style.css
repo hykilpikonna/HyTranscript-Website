@@ -152,14 +152,6 @@ ul.list-has-style ul li, .kopa-header-01 .top-header ul ul li, .kopa-widget-list
  * 
  **/
 /* 1.2.1 Default Structure Tag */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto Slab", serif;
-}
 
 a {
   color: #6f6f6f;

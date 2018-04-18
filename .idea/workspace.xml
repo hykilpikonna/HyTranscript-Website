@@ -7,19 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabaseReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/PostsDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/PostsDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/PostsDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/PostsDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +37,8 @@
       <file leaf-file-name="LanguageFileReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+            <state relative-caret-position="285">
+              <caret line="180" column="69" selection-start-line="180" selection-start-column="69" selection-end-line="180" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1092#1093#0" expanded="true" />
@@ -57,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsDatabase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PostsDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -80,11 +71,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="230">
+              <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -108,6 +117,7 @@
       <find>because we are the best lolololol (jk</find>
       <find>(you actually have to click on \&quot;Download Links:\&quot; in order to see the download links...)</find>
       <find>set</find>
+      <find>font</find>
     </findStrings>
     <replaceStrings>
       <replace>)\n\t{</replace>
@@ -129,11 +139,11 @@
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Song.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LangFileDatabase.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LangFile.java" />
-        <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabaseReader.java" />
         <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java" />
+        <option value="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -211,6 +221,12 @@
               <item name="HyTranscript" type="b2602c69:ProjectViewProjectNode" />
               <item name="HyTranscript" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HyTranscript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HyTranscript" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HyTranscript" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +310,8 @@
       <listeners />
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="HyTranscript:war exploded">
           <settings>
@@ -390,12 +407,12 @@
       <updated>1523831799994</updated>
       <workItem from="1523831806265" duration="4542000" />
       <workItem from="1523987430331" duration="18335000" />
-      <workItem from="1524048344775" duration="10358000" />
+      <workItem from="1524048344775" duration="12488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33235000" />
+    <option name="totallyTimeSpent" value="35365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -581,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Song.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
@@ -602,18 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -623,6 +621,39 @@
             <element signature="method#readConfig#0;class#PostsDatabase#0" />
             <element signature="method#writeConfig#0;class#PostsDatabase#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="180" column="69" selection-start-line="180" selection-start-column="69" selection-end-line="180" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
         </state>
       </provider>
     </entry>
