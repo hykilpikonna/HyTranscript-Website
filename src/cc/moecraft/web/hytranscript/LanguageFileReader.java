@@ -136,7 +136,44 @@ public class LanguageFileReader
             }
             else if (lang.equals(OfficiallySupportedLanguages.en_US.name()))
             {
+                set("INDEX-1-TOP-BAR-LINK-1", "主页");
+                set("INDEX-1-TOP-BAR-LINK-2", "介绍");
+                set("INDEX-1-TOP-BAR-LINK-3", "下载");
 
+                set("INDEX-1-CENTER-TEXT-1", "HyTranscript");
+                set("INDEX-1-CENTER-TEXT-2", "一个超级认真的发布钢琴谱的网站! (雾");
+                set("INDEX-1-CENTER-BUTTON-1", "介绍");
+                set("INDEX-1-CENTER-BUTTON-2", "下载完成的谱子");
+
+                set("INDEX-3-HEADER-TEXT-1", "在这里可以干什么?");
+                set("INDEX-3-HEADER-TEXT-2", "可以下载小桂已经扒好的谱子, 也可以把你喜欢的钢琴曲丢给小桂去扒_(:з」∠)_");
+
+                set("INDEX-3-CONTENT-TITLE-TEXT-1", "完全免费!");
+                set("INDEX-3-CONTENT-TITLE-TEXT-2", "没有广告!");
+                set("INDEX-3-CONTENT-TITLE-TEXT-3", "可以推歌!");
+                set("INDEX-3-CONTENT-TITLE-TEXT-4", "小桂可爱!");
+
+                set("INDEX-3-CONTENT-DESCRIPTION-TEXT-1", "这个网站上所有谱子都可以免费下载哦!");
+                set("INDEX-3-CONTENT-DESCRIPTION-TEXT-2", "完全没广告! (即使有我也不通过广告赚钱的...");
+                set("INDEX-3-CONTENT-DESCRIPTION-TEXT-3", "可以免费推荐你喜欢的钢琴曲给我让我扒!");
+                set("INDEX-3-CONTENT-DESCRIPTION-TEXT-4", "诶诶诶诶?? 我不是! 我没有! 别乱说!!");
+
+                set("INDEX-4-HEADER-TEXT-1", "下载!");
+                set("INDEX-4-HEADER-TEXT-2", "(\"下载链接:\" 要点一下才能看到的)");
+
+                set("INDEX-4-PLACEHOLDERS-DIFFICULTY-1", "萌新");
+                set("INDEX-4-PLACEHOLDERS-DIFFICULTY-2", "一般");
+                set("INDEX-4-PLACEHOLDERS-DIFFICULTY-3", "大佬");
+                set("INDEX-4-PLACEHOLDERS-DIFFICULTY-4", "巨佬");
+
+                set("INDEX-4-PLACEHOLDERS-LINK-TYPE-1", "视频");
+                set("INDEX-4-PLACEHOLDERS-LINK-TYPE-2", "谱子");
+                set("INDEX-4-PLACEHOLDERS-LINK-TYPE-3", "其他");
+
+                set("INDEX-5-HEADER-TEXT-1", "推歌");
+                set("INDEX-5-HEADER-TEXT-2", "公共接口还在开发... 现在要推歌就发邮箱给我吧! admin@moecraft.cc");
+
+                set("INDEX-FOOTER-TEXT-1", "<del>Copyright © 2018 Company Name All rights reserved.</del> // 懒得注册版权了_(:з」∠)_");
             }
             else
             {
