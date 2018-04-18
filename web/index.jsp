@@ -9,7 +9,7 @@
     if (s_lang == null)
     {
 %>
-<meta http-equiv="Refresh" content="1; url=${requestScope['javax.servlet.forward.request_uri']}?lang=${pageContext.request.locale}">
+<meta http-equiv="Refresh" content="0; url=${requestScope['javax.servlet.forward.request_uri']}?lang=${pageContext.request.locale}">
 <%
         return;
     }
