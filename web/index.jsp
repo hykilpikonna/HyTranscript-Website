@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
 <%@ page import="cc.moecraft.web.hytranscript.Song" %>
 <%@ page import="cc.moecraft.web.hytranscript.Main" %>
 <%@ page import="cc.moecraft.web.hytranscript.DownloadLink" %>
@@ -16,14 +17,14 @@
     LanguageFileReader.LanguageFile language = Main.language().getFile(s_lang);
 %>
 <!DOCTYPE html>
-<!-- ç›´æŽ¥å¤åˆ¶ä¸ªæ¨¡æ¿å•Šå“ˆå“ˆå“ˆå“ˆ -->
+<!-- Ö±½Ó¸´ÖÆ¸öÄ£°å°¡¹þ¹þ¹þ¹þ -->
 <!--html lang="en"-->
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
 		<title>Home</title>
 		
-		<!-- å­—ä½“ -->
+		<!-- ×ÖÌå -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto+Slab:300,400,700" rel="stylesheet">
 
 		<!-- Css -->
@@ -155,7 +156,7 @@
 										<p><input type="text" placeholder="Keywords..."></p>
 										<p><button type="submit" class="button-01">Search</button></p-->
 										
-										<!-- å ä½ç½®ç”¨hhhh -->
+										<!-- Õ¼Î»ÖÃÓÃhhhh -->
 										<p><button type="submit" class="button-01">s</button></p>
 									</form>
 								</div>
