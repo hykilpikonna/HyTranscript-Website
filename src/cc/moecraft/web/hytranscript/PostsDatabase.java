@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class PostsDatabase extends Config
 {
-    private int nextIndex;
+    static final String SONG_PREFIX = "Song.";
 
     public PostsDatabase()
     {
@@ -25,17 +25,19 @@ public class PostsDatabase extends Config
     {
         ArrayList<Song> result = new ArrayList<>();
 
-        for (int i = 0; i < nextIndex; i++)
+        for (String key : getKeys(SONG_PREFIX))
         {
-            result.add(getSong(i));
+            result.add(getSong(key));
         }
 
         return result;
     }
 
-    public Song getSong(int index)
+    public Song getSong(String k)
     {
-        String finalPath = "S" + index + ".";
+        String finalPath = SONG_PREFIX + k + ".";
+
+        System.out.println("Final Path = " + finalPath);
 
         ArrayList<String> keys = getKeys(finalPath + "Links");
         ArrayList<DownloadLink> links = new ArrayList<>();
@@ -56,14 +58,13 @@ public class PostsDatabase extends Config
 
     public void setSong(Song song)
     {
-        setSong(nextIndex, song);
-        nextIndex += 1;
-        saveCurrentIndex();
+        setSong(String.valueOf(System.currentTimeMillis()), song);
+        save();
     }
 
-    private void setSong(int index, Song song)
+    private void setSong(String key, Song song)
     {
-        String finalPath = "S" + index + ".";
+        String finalPath = SONG_PREFIX + key + ".";
 
         set(finalPath + "ImageURL", song.getImageURL());
         set(finalPath + "Name", song.getName());
@@ -98,7 +99,7 @@ public class PostsDatabase extends Config
     @Override
     public void readConfig()
     {
-        nextIndex = getInt("CurrentIndex");
+
     }
 
     @Override
@@ -110,8 +111,6 @@ public class PostsDatabase extends Config
     @Override
     public void writeDefaultConfig()
     {
-        saveCurrentIndex();
-
         ArrayList<DownloadLink> links = new ArrayList<>();
         links.add(new DownloadLink(DownloadLink.LinkType.Video, DownloadLink.LinkDomain.Youtube, "youtube.com"));
         links.add(new DownloadLink(DownloadLink.LinkType.Video, DownloadLink.LinkDomain.Bilibili, "bilibili.com"));
@@ -120,21 +119,5 @@ public class PostsDatabase extends Config
         links.add(new DownloadLink(DownloadLink.LinkType.Misc, DownloadLink.LinkDomain.DuPan, "pan.baidu.com"));
 
         setSong(new Song("http://i0.kym-cdn.com/photos/images/original/000/581/296/c09.jpg", "DefaultSongName", "DefaultSubtitle", "DefaultAuthor", 156, Difficulty.Hard, "2018-04-17", links));
-    }
-
-    public int getNextIndex()
-    {
-        return nextIndex;
-    }
-
-    public void setNextIndex(int nextIndex)
-    {
-        this.nextIndex = nextIndex;
-    }
-
-    public void saveCurrentIndex()
-    {
-        set("CurrentIndex", nextIndex);
-        save();
     }
 }
