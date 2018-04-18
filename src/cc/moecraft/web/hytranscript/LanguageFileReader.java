@@ -16,6 +16,8 @@ public class LanguageFileReader
 {
     private Map<String, LanguageFile> languageFileMap;
 
+    String defaultLang = "en";
+
     private enum OfficiallySupportedLanguages
     {
         zh, en
@@ -35,8 +37,7 @@ public class LanguageFileReader
 
     public LanguageFile getFile(String lang)
     {
-        String defaultLang = "en";
-        if (!hasLanguageFile(lang)) lang = defaultLang;
+        lang = getLang(lang);
 
         if (languageFileMap.containsKey(lang))
         {
@@ -47,6 +48,11 @@ public class LanguageFileReader
             languageFileMap.put(lang, new LanguageFile(lang));
             return getFile(lang);
         }
+    }
+
+    public String getLang(String original)
+    {
+        return !hasLanguageFile(original) ? defaultLang : original;
     }
 
     private boolean hasLanguageFile(String lang)

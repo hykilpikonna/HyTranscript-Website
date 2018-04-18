@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <!-- 直接复制个模板啊哈哈哈哈 -->
 <!--html lang="en"-->
-<html>
+<html lang="<%=Main.language().getLang(s_lang)%>">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
 		<title>Home</title>
