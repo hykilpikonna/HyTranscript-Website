@@ -8,7 +8,7 @@
     if (s_lang == null)
     {
 %>
-<meta http-equiv="Refresh" content="5; url=<%=request.getAttribute("javax.servlet.forward.request_uri")%>?lang=<%=pageContext.getAttribute("localeCode")%>">
+<meta http-equiv="Refresh" content="1; url=${requestScope['javax.servlet.forward.request_uri']}?lang=${pageContext.request.locale}">
 <%
         return;
     }
@@ -17,8 +17,8 @@
 %>
 <!DOCTYPE html>
 <!-- 直接复制个模板啊哈哈哈哈 -->
-<!-- 这是英文网页 -->
-<html lang="en">
+<!--html lang="en"-->
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Home</title>

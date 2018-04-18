@@ -47,5 +47,7 @@ public class Main implements ServletContextListener
         instance = this;
 
         database = new PostsDatabase();
+
+        language = new LanguageFileReader();
     }
 }
