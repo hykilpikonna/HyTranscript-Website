@@ -76,11 +76,11 @@
 						</div-->
 						<ul>
 							<li />
-							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-telegram"></i></a></li>
-							<li><a href="#"><i class="fa fa-qq"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-wechat"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCCwz4RuQr1Glln359nuj2vw"><i class="fa fa-youtube-square"></i></a></li>
+							<li><a href="https://github.com/hykilpikonna"><i class="fa fa-github-square"></i></a></li>
+							<li><a href="https://flat.io/hykilpikonna"><i class="fa fa-music"></i></a></li>
+							<li><a href="http://wpa.qq.com/msgrd?v=3&uin=871674895&site=qq&menu=yes"><i class="fa fa-qq"></i></a></li>
+							<!--li><a href="#"><i class="fa fa-wechat"></i></a></li-->
 						</ul>
 					</div>
 					<div class="bottom-header style-01">
