@@ -12,11 +12,15 @@ import java.util.ArrayList;
  */
 public class PostsDatabase extends Config
 {
-    static final String SONG_PREFIX = "Song.";
+    String lang;
 
-    public PostsDatabase()
+    private static final String SONG_PREFIX = "Song.";
+
+    public PostsDatabase(String lang)
     {
-        super("0.0.1", "HyTranscript", "PostsDatabase", "hydb", false, true, true);
+        super("0.0.1", "HyTranscript", "PostsDatabase@" + lang, "hydb", false, true, true);
+
+        this.lang = lang;
 
         System.out.println("HyTranscript Database File Path = " + getConfigFile().getAbsolutePath());
     }
@@ -36,8 +40,6 @@ public class PostsDatabase extends Config
     public Song getSong(String k)
     {
         String finalPath = SONG_PREFIX + k + ".";
-
-        System.out.println("Final Path = " + finalPath);
 
         ArrayList<String> keys = getKeys(finalPath + "Links");
         ArrayList<DownloadLink> links = new ArrayList<>();

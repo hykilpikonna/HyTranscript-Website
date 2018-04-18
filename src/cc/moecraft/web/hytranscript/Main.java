@@ -18,14 +18,14 @@ public class Main implements ServletContextListener
         return instance;
     }
 
-    PostsDatabase database;
+    private PostsDatabaseReader database;
 
-    public static PostsDatabase database()
+    public static PostsDatabaseReader database()
     {
         return getInstance().database;
     }
 
-    LanguageFileReader language;
+    private LanguageFileReader language;
 
     public static LanguageFileReader language()
     {
@@ -46,7 +46,7 @@ public class Main implements ServletContextListener
 
         instance = this;
 
-        database = new PostsDatabase();
+        database = new PostsDatabaseReader();
 
         language = new LanguageFileReader();
     }

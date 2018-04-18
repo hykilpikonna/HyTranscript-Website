@@ -16,7 +16,7 @@ public class LanguageFileReader
 {
     private Map<String, LanguageFile> languageFileMap;
 
-    String defaultLang = "en";
+    private String defaultLang = "en";
 
     private enum OfficiallySupportedLanguages
     {

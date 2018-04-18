@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
-<%@ page import="cc.moecraft.web.hytranscript.Song" %>
-<%@ page import="cc.moecraft.web.hytranscript.Main" %>
-<%@ page import="cc.moecraft.web.hytranscript.DownloadLink" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="cc.moecraft.web.hytranscript.LanguageFileReader" %>
+<%@ page import="cc.moecraft.web.hytranscript.*" %>
 <%
     String s_lang = request.getParameter("lang");
     if (s_lang == null)
@@ -15,6 +12,8 @@
     }
 
     LanguageFileReader.LanguageFile language = Main.language().getFile(s_lang);
+
+	PostsDatabase database = Main.database().getFile(s_lang);
 %>
 <!DOCTYPE html>
 <!-- 直接复制个模板啊哈哈哈哈 -->
@@ -242,7 +241,7 @@
 							<div class="widget-content module-listcourse-04">
 								<div class="row">
 									<%
-                                        ArrayList<Song> songs = Main.database().getSongs();
+                                        ArrayList<Song> songs = database.getSongs();
 
                                         for (int i = 0; i < songs.size(); i++)
                                         {
