@@ -35,7 +35,7 @@ public class LanguageFileReader
         return getFile(lang).get(placeholder);
     }
 
-    private LanguageFile getFile(String lang)
+    public LanguageFile getFile(String lang)
     {
         if (!hasLanguageFile(lang)) lang = defaultLang;
 
@@ -101,6 +101,7 @@ public class LanguageFileReader
 
                 set("INDEX-1-CENTER-TEXT-1", "HyTranscript");
                 set("INDEX-1-CENTER-TEXT-2", "Now you can practice your favorite piano songs with quality sheet music for free!");
+
                 set("INDEX-1-CENTER-BUTTON-1", "Learn More");
                 set("INDEX-1-CENTER-BUTTON-2", "Download Sheet Musics");
 

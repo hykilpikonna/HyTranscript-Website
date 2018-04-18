@@ -25,6 +25,13 @@ public class Main implements ServletContextListener
         return getInstance().database;
     }
 
+    LanguageFileReader language;
+
+    public static LanguageFileReader language()
+    {
+        return getInstance().language;
+    }
+
     @Override
     public void contextDestroyed(ServletContextEvent arg0)
     {
