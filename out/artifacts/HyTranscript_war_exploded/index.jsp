@@ -2,6 +2,19 @@
 <%@ page import="cc.moecraft.web.hytranscript.Main" %>
 <%@ page import="cc.moecraft.web.hytranscript.DownloadLink" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="cc.moecraft.web.hytranscript.LanguageFileReader" %>
+<%
+    String s_lang = request.getParameter("lang");
+    if (s_lang == null)
+    {
+%>
+<meta http-equiv="Refresh" content="5; url=<%=request.getAttribute("javax.servlet.forward.request_uri")%>?lang=<%=pageContext.getAttribute("localeCode")%>">
+<%
+        return;
+    }
+
+    LanguageFileReader.LanguageFile language = Main.language().getFile(s_lang);
+%>
 <!DOCTYPE html>
 <!-- 直接复制个模板啊哈哈哈哈 -->
 <!-- 这是英文网页 -->
@@ -81,9 +94,9 @@
 							<div class="pull-right">
 								<nav class="kopa-main-menu style-01">
 									<ul>
-										<li><a href="#1-top">Top</a></li>
-										<li><a href="#3-introduction">Introduction</a></li>
-										<li><a href="#4-downloads">Songs</a></li>
+										<li><a href="#1-top"><%=language.get("INDEX-1-TOP-BAR-LINK-1")%></a></li>
+										<li><a href="#3-introduction"><%=language.get("INDEX-1-TOP-BAR-LINK-2")%></a></li>
+										<li><a href="#4-downloads"><%=language.get("INDEX-1-TOP-BAR-LINK-3")%></a></li>
 									</ul>
 								</nav>
 								<div class="kopa-search">
@@ -107,10 +120,10 @@
 							<div class="container">
 								<img src="img/index-1/1@noborder.png" alt="">
 								<div class="content">
-									<h2>HyTranscript</h2>
-									<p>Now you can practice your favorate piano songs with quality sheet musics for free!</p>
-									<a href="#" class="button-01">Learn More</a>
-									<a href="#" class="button-01">Download Music Sheets</a>
+									<h2><%=language.get("INDEX-1-CENTER-TEXT-1")%></h2>
+									<p><%=language.get("INDEX-1-CENTER-TEXT-2")%></p>
+									<a href="#" class="button-01"><%=language.get("INDEX-1-CENTER-BUTTON-1")%></a>
+									<a href="#" class="button-01"><%=language.get("INDEX-1-CENTER-BUTTON-2")%></a>
 								</div>
 							</div>
 						</div>
@@ -154,8 +167,8 @@
 					<div class="container">
 						<div class="widget kopa-widget-features">
 							<header class="widget-header style-01">
-								<h3 class="widget-title">Why Us?</h3>
-								<h4>because we are the best lolololol (jk</h4>
+								<h3 class="widget-title"><%=language.get("INDEX-3-HEADER-TEXT-1")%></h3>
+								<h4><%=language.get("INDEX-3-HEADER-TEXT-2")%></h4>
 							</header>
 							<div class="widget-content module-features-01">
 								<div class="row">
@@ -167,9 +180,9 @@
 												</div>
 												<div class="entry-content">
 													<h4 class="entry-title">
-														<a href="#">Holy, It's Free!</a>
+														<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-1")%></a>
 													</h4>
-													<p>You can download everything and suggest any song for free.</p>
+													<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-1")%></p>
 												</div>
 											</div>
 										</article>
@@ -181,9 +194,9 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title">
-													<a href="#">...And No Ads!</a>
+													<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-2")%></a>
 												</h4>
-												<p>There are no ads on this page except for flat.io and I don't benifit from it.</p>
+												<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-2")%></p>
 											</div>
 										</article>
 									</div>
@@ -194,9 +207,9 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title">
-													<a href="#">Suggest Songs!</a>
+													<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-3")%></a>
 												</h4>
-												<p>You can suggest your favorate piano songs for me to transcribe!</p>
+												<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-3")%></p>
 											</div>
 										</article>
 									</div>
@@ -207,9 +220,9 @@
 											</div>
 											<div class="entry-content">
 												<h4 class="entry-title">
-													<a href="#">I'm cute</a>
+													<a href="#"><%=language.get("INDEX-3-CONTENT-TITLE-TEXT-4")%></a>
 												</h4>
-												<p>Totally not (</p>
+												<p><%=language.get("INDEX-3-CONTENT-DESCRIPTION-TEXT-4")%></p>
 											</div>
 										</article>
 									</div>
@@ -222,8 +235,8 @@
 					<div class="container">
 						<div class="widget kopa-widget-listcourse">
 							<header class="widget-header style-01">
-								<h3 class="widget-title">Downloads</h3>
-								<h4>even though none of them directly points to a file link...</h4>
+								<h3 class="widget-title"><%=language.get("INDEX-4-HEADER-TEXT-1")%></h3>
+								<h4><%=language.get("INDEX-4-HEADER-TEXT-2")%></h4>
 							</header>
 							<div class="widget-content module-listcourse-04">
 								<div class="row">
@@ -235,10 +248,29 @@
                                             Song song = songs.get(i);
 
                                             int minute = song.getTimeInSeconds() / 60;
-
                                             int restSeconds = song.getTimeInSeconds() - minute * 60;
-
                                             String time = minute + ":" + restSeconds;
+
+                                            String difficultyText;
+
+                                            switch (song.getDifficulty())
+											{
+												case Easy:
+												    difficultyText = language.get("INDEX-4-PLACEHOLDERS-DIFFICULTY-1");
+												    break;
+												case Medium:
+													difficultyText = language.get("INDEX-4-PLACEHOLDERS-DIFFICULTY-2");
+													break;
+												case Hard:
+													difficultyText = language.get("INDEX-4-PLACEHOLDERS-DIFFICULTY-3");
+													break;
+												case Expert:
+													difficultyText = language.get("INDEX-4-PLACEHOLDERS-DIFFICULTY-4");
+													break;
+												default:
+												    difficultyText = "Unknown";
+												    break;
+											}
                                     %>
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <article class="entry-item kopa-item-course-01">
@@ -259,7 +291,7 @@
                                                     </li>
                                                     <li>
                                                         <i class="fa fa-flash"></i>
-                                                        <%=song.getDifficulty().toString()%>
+                                                        <%=difficultyText%>
                                                     </li>
                                                     <li>
                                                         <i class="fa fa-calendar"></i>
@@ -277,8 +309,27 @@
                                                             <%
                                                                 for (DownloadLink link : song.getLinks())
                                                                 {
+                                                                    String linkText;
+
+                                                                    switch (link.getType())
+																	{
+																		case Video:
+																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
+																			break;
+																		case Sheet:
+																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
+																			break;
+																		case Misc:
+																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
+																			break;
+																		default:
+																		    linkText = "Link";
+																		    break;
+																	}
+
+																	linkText += " - " + link.getDomain().toString();
                                                             %>
-                                                            <li><a href="<%=link.getUrl()%>"><%=link.getType().toString()%> - <%=link.getDomain().toString()%></a></li>
+                                                            <li><a href="<%=link.getUrl()%>"><%=linkText%></a></li>
                                                             <%
                                                                 }
                                                             %>
@@ -301,8 +352,8 @@
 					<div class="container">
 						<div class="widget kopa-widget-features">
 							<header class="widget-header style-01">
-								<h3 class="widget-title">Suggest Songs</h3>
-								<h4>public interface comming soon.... currently you can email me if u want to suggest: admin@moecraft.cc</h4>
+								<h3 class="widget-title"><%=language.get("INDEX-5-HEADER-TEXT-1")%></h3>
+								<h4><%=language.get("INDEX-5-HEADER-TEXT-2")%></h4>
 							</header>
 						</div>
 					</div>
@@ -310,7 +361,7 @@
 			</div>
 			<footer class="kopa-footer style-01">
 				<div class="container">
-					<p>ahahahahahahah ok idk what to put here</p>
+					<p><%=language.get("INDEX-FOOTER-TEXT-1")%></p>
 				</div>
 			</footer>
 		</div>

@@ -5,7 +5,7 @@
 <%@ page import="cc.moecraft.web.hytranscript.LanguageFileReader" %>
 <%
     String s_lang = request.getParameter("lang");
-    if (s_lang.isEmpty())
+    if (s_lang == null)
     {
 %>
 <meta http-equiv="Refresh" content="5; url=<%=request.getAttribute("javax.servlet.forward.request_uri")%>?lang=<%=pageContext.getAttribute("localeCode")%>">
