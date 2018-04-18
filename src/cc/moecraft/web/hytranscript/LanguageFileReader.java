@@ -76,7 +76,7 @@ public class LanguageFileReader
 
         public String get(String placeholder)
         {
-            return getString("StaticLanguages." + placeholder);
+            return getString(placeholder);
         }
 
         @Override
