@@ -7,12 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HyTranscript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HyTranscript.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +22,8 @@
       <file leaf-file-name="LanguageFileReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            <state relative-caret-position="228">
+              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -386,12 +380,12 @@
       <updated>1523831799994</updated>
       <workItem from="1523831806265" duration="4542000" />
       <workItem from="1523987430331" duration="18335000" />
-      <workItem from="1524048344775" duration="2624000" />
+      <workItem from="1524048344775" duration="2908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25501000" />
+    <option name="totallyTimeSpent" value="25785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -592,8 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state relative-caret-position="228">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -606,7 +600,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited />
+          <last-edited>HyTranscript:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

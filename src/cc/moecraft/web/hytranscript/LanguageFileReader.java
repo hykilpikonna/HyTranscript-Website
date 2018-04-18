@@ -18,10 +18,10 @@ public class LanguageFileReader
 
     private enum OfficiallySupportedLanguages
     {
-        zh_CN, en_US
+        zh, en
     }
 
-    private String defaultLang = "en_US";
+    private String defaultLang = "en";
 
     public LanguageFileReader()
     {
@@ -71,7 +71,6 @@ public class LanguageFileReader
         {
             super("0.0.1", "HyTranscript", "IndexLanguage@" + lang, "hylang", false, false, true);
             this.lang = lang;
-            System.out.println("Lang = " + lang);
             checkConfig();
         }
 
@@ -97,7 +96,7 @@ public class LanguageFileReader
         {
             if (lang == null) return;
 
-            if (lang.equals(OfficiallySupportedLanguages.zh_CN.name()))
+            if (lang.equals(OfficiallySupportedLanguages.en.name()))
             {
                 set("INDEX-1-TOP-BAR-LINK-1", "Top");
                 set("INDEX-1-TOP-BAR-LINK-2", "Introduction");
@@ -139,7 +138,7 @@ public class LanguageFileReader
 
                 set("INDEX-FOOTER-TEXT-1", "Copyright © 2018 Toolazytoregister  <del>All rights reserved.</del>");
             }
-            else if (lang.equals(OfficiallySupportedLanguages.en_US.name()))
+            else if (lang.equals(OfficiallySupportedLanguages.zh.name()))
             {
                 set("INDEX-1-TOP-BAR-LINK-1", "主页");
                 set("INDEX-1-TOP-BAR-LINK-2", "介绍");
