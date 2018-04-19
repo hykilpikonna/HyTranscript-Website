@@ -79,6 +79,9 @@
 			}
 		</style>
 
+		<script>
+            $("[data-toggle=popover]").popover({html:true})
+		</script>
 	</head>
 	<body>
 		<div id="main-container">
@@ -346,10 +349,10 @@
 																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
 																			break;
 																		case Sheet:
-																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
+																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-2");
 																			break;
 																		case Misc:
-																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
+																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-3");
 																			break;
 																		default:
 																		    linkText = "Link";
