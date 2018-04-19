@@ -137,7 +137,8 @@ public class LanguageFileReader
                 addDefault("INDEX-4-PLACEHOLDERS-LINK-TYPE-2", "Sheet");
                 addDefault("INDEX-4-PLACEHOLDERS-LINK-TYPE-3", "Misc.");
 
-                addDefault("INDEX-4-PLACEHOLDERS-DOWNLOAD_LINK", "Click Here to Show Links");
+                addDefault("INDEX-4-POPOVER-BUTTON", "Click Here to Show Links");
+                addDefault("INDEX-4-POPOVER-TITLE", "Download Links");
 
                 addDefault("INDEX-5-HEADER-TEXT-1", "Suggest Songs");
                 addDefault("INDEX-5-HEADER-TEXT-2", "public interface coming soon... currently u can email me for suggestions: admin@moecraft.cc");
@@ -180,7 +181,8 @@ public class LanguageFileReader
                 addDefault("INDEX-4-PLACEHOLDERS-LINK-TYPE-2", "谱子");
                 addDefault("INDEX-4-PLACEHOLDERS-LINK-TYPE-3", "其他");
 
-                addDefault("INDEX-4-PLACEHOLDERS-DOWNLOAD_LINK", "点击此处获取下载连接");
+                addDefault("INDEX-4-POPOVER-BUTTON", "点击此处获取下载连接");
+                addDefault("INDEX-4-POPOVER-TITLE", "下载链接");
 
                 addDefault("INDEX-5-HEADER-TEXT-1", "推歌");
                 addDefault("INDEX-5-HEADER-TEXT-2", "公共接口还在开发... 现在要推歌就发邮箱给我吧! admin@moecraft.cc");
