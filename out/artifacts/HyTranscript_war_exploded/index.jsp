@@ -41,8 +41,10 @@
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="style.css">
 		
-		<script src="js/jquery-2.2.4.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<!--script src="js/jquery-2.2.4.min.js"></script-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--script src="js/bootstrap.min.js"></script-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/jquery.sliderPro.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
@@ -80,7 +82,9 @@
 		</style>
 
 		<script>
-            $("[data-toggle=popover]").popover({html:true})
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover({html:true});
+            });
 		</script>
 	</head>
 	<body>
@@ -303,6 +307,35 @@
 												    difficultyText = "Unknown";
 												    break;
 											}
+
+											String popover = "<a href=\"#!\" role=\"button\" class=\"btn popovers#ADDITIONAL_CLASS#\" data-container=\"body\" data-toggle=\"popover\" title=\"\" data-placement=\"bottom\" data-content=\"#DOWNLOAD_LINKS#\" data-original-title=\"#LINK_TITLE#\">%s</a>";;
+											StringBuilder linksHTML = new StringBuilder();
+
+											for (DownloadLink link : song.getLinks())
+											{
+												String linkText;
+
+												switch (link.getType())
+												{
+													case Video:
+														linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
+														break;
+													case Sheet:
+														linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-2");
+														break;
+													case Misc:
+														linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-3");
+														break;
+													default:
+														linkText = "Link";
+														break;
+												}
+
+												linksHTML.append(String.format("<a href='%s'>%s - %s</a><br>\n", link.getUrl(), linkText, link.getDomain().toString()));
+											}
+
+											popover = popover.replace("#DOWNLOAD_LINKS#", linksHTML).replace("#LINK_TITLE#", language.get("INDEX-4-PLACEHOLDERS-DOWNLOAD_LINK"));
+
                                     %>
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <article class="entry-item kopa-item-course-01">
@@ -310,11 +343,13 @@
                                                <img src="<%=song.getImageURL()%>" alt="">
                                             </div>
                                             <div class="entry-content">
-                                                <a href="#" class="course-category"><%=song.getName()%></a>
+												<a class="course-category"><%=song.getName()%></a>
+                                                <!--%=String.format(popover, song.getName()).replace("#ADDITIONAL_CLASS#", " course-category")%-->
                                                 <h4 class="entry-title">
-                                                    <a href="#"><%=song.getSubtitle()%></a>
+													<%=song.getSubtitle()%>
+                                                    <!--%=String.format(popover, song.getSubtitle()).replace("#ADDITIONAL_CLASS#", "")%-->
                                                 </h4>
-                                                <a href="#" class="course-author"><%=song.getAuthor()%></a>
+                                                <a class="course-author"><%=song.getAuthor()%></a>
 
                                                 <ul class="course-detail">
                                                     <li>
@@ -330,44 +365,9 @@
                                                         <%=song.getDateReleased()%>
                                                     </li>
                                                 </ul>
-                                                <div class="course-price">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%=i%>" aria-expanded="false" aria-controls="collapse<%=i%>">
-                                                        <span class="price">Download Links:</span>
-                                                    </a>
-                                                </div>
-                                                <div id="collapse<%=i%>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                    <div class="panel-body">
-                                                        <ul>
-                                                            <%
-                                                                for (DownloadLink link : song.getLinks())
-                                                                {
-                                                                    String linkText;
-
-                                                                    switch (link.getType())
-																	{
-																		case Video:
-																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-1");
-																			break;
-																		case Sheet:
-																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-2");
-																			break;
-																		case Misc:
-																			linkText = language.get("INDEX-4-PLACEHOLDERS-LINK-TYPE-3");
-																			break;
-																		default:
-																		    linkText = "Link";
-																		    break;
-																	}
-
-																	linkText += " - " + link.getDomain().toString();
-                                                            %>
-                                                            <li><a href="<%=link.getUrl()%>"><%=linkText%></a></li>
-                                                            <%
-                                                                }
-                                                            %>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+												<div class="course-price">
+													<%=String.format(popover, "<span class=\"price\">" + language.get("INDEX-4-PLACEHOLDERS-DOWNLOAD_LINK") + "</span>").replace("#ADDITIONAL_CLASS#", "")%>
+												</div>
                                             </div>
                                         </article>
                                     </div>
