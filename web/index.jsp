@@ -58,21 +58,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<style>
-			h2
-			{
+			h2 {
 				font-family: "Roboto Slab", sans-serif;
 			}
 
-			h1,
-			h3,
-			h4,
-			h5,
-			h6
-			{
+			h1, h3, h4, h5, h6 {
 				font-family: <%=font%>
+			}
+
+			.entry-title {
+				font-family: "Microsoft YaHei UI Light", STXihei, ¡°»ªÎÄÏ¸ºÚ¡±, ¡°Microsoft YaHei¡±, ¡°Î¢ÈíÑÅºÚ¡±, sans-serif;
+			}
+
+			body {
+				font-family: "Microsoft YaHei UI Light", STXihei, ¡°»ªÎÄÏ¸ºÚ¡±, ¡°Microsoft YaHei¡±, ¡°Î¢ÈíÑÅºÚ¡±, sans-serif;
+				font-weight: 400;
+				color: #2c3e50;
+				background: #fff;
+				font-size: 13px;
 			}
 		</style>
 
+		<script>
+            $("[data-toggle=popover]").popover({html:true})
+		</script>
 	</head>
 	<body>
 		<div id="main-container">

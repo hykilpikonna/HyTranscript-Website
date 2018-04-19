@@ -199,14 +199,6 @@ img {
 	max-width: 100%;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #2c3e50;
-  background: #fff;
-  font-size: 13px;
-}
-
 .container {
   padding: 0;
 }
@@ -6756,10 +6748,6 @@ aside.sidebar .kopa-widget-advanced_search .widget-title:before {
 .widget-title.style-06 {
   background-color: #f6f6f6;
   margin-bottom: 30px;
-}
-
-.entry-title {
-  font-family: "Montserrat", sans-serif;
 }
 
 .entry-title a {
