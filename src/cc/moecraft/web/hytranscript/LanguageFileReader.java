@@ -18,7 +18,7 @@ public class LanguageFileReader
 {
     private Map<String, LanguageFile> languageFileMap;
 
-    static final String DEFAULT_LANG = "en";
+    public static final String DEFAULT_LANG = "en";
 
     private enum OfficiallySupportedLanguages
     {
@@ -55,7 +55,7 @@ public class LanguageFileReader
         return !hasLanguageFile(original) ? DEFAULT_LANG : original;
     }
 
-    private boolean hasLanguageFile(String lang)
+    public boolean hasLanguageFile(String lang)
     {
         try
         {

@@ -2,13 +2,39 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="cc.moecraft.web.hytranscript.*" %>
 <%
-    String s_lang = request.getParameter("lang");
-    if (s_lang == null)
-    {
+	String s_lang;
+    try
+	{
+	    s_lang = request.getParameter("lang").toLowerCase();
+	}
+	catch (NullPointerException ignored)
+	{
 %>
 <meta http-equiv="Refresh" content="0; url=${requestScope['javax.servlet.forward.request_uri']}?lang=${pageContext.request.locale}">
 <%
-        return;
+		return;
+	}
+
+    if (!Main.language().hasLanguageFile(s_lang))
+    {
+        if (s_lang.contains("zh") || s_lang.contains("cn") || s_lang.contains("tw"))
+		{
+		    System.out.println("已识别为中文的语言: " + s_lang);
+		    s_lang = "zh";
+		}
+        else if (s_lang.contains("en") || s_lang.contains("us"))
+		{
+			System.out.println("已识别为英文的语言: " + s_lang);
+		    s_lang = "en";
+		}
+		else
+		{
+		    System.out.println("未识别的语言: " + s_lang);
+		    s_lang = LanguageFileReader.DEFAULT_LANG;
+		}
+%>
+<meta http-equiv="Refresh" content="0; url=${requestScope['javax.servlet.forward.request_uri']}?lang=<%=s_lang%>">
+<%
     }
 
     LanguageFileReader.LanguageFile language = Main.language().getFile(s_lang);
