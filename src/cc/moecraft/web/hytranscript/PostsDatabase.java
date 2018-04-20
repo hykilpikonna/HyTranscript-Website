@@ -4,6 +4,8 @@ import cc.moecraft.api.Config;
 
 import java.util.ArrayList;
 
+import static cc.moecraft.web.hytranscript.Main.VERSION;
+
 /**
  * 此类由 Hykilpikonna 在 2018/04/15 创建!
  * Created by Hykilpikonna on 2018/04/15!
@@ -18,7 +20,7 @@ public class PostsDatabase extends Config
 
     public PostsDatabase(String lang)
     {
-        super("0.0.1", "HyTranscript", "PostsDatabase@" + lang, "hydb", false, true, true);
+        super(VERSION, "HyTranscript", "PostsDatabase@" + lang, "hydb", false, true, true);
 
         this.lang = lang;
 

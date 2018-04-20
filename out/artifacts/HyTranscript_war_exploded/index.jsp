@@ -334,7 +334,7 @@
 												linksHTML.append(String.format("<a href='%s'>%s - %s</a><br>\n", link.getUrl(), linkText, link.getDomain().toString()));
 											}
 
-											popover = popover.replace("#DOWNLOAD_LINKS#", linksHTML).replace("#LINK_TITLE#", language.get("INDEX-4-PLACEHOLDERS-DOWNLOAD_LINK"));
+											popover = popover.replace("#DOWNLOAD_LINKS#", linksHTML).replace("#LINK_TITLE#", language.get("INDEX-4-POPOVER-TITLE"));
 
                                     %>
                                     <div class="col-md-4 col-sm-4 col-xs-12">
@@ -366,7 +366,7 @@
                                                     </li>
                                                 </ul>
 												<div class="course-price">
-													<%=String.format(popover, "<span class=\"price\">" + language.get("INDEX-4-PLACEHOLDERS-DOWNLOAD_LINK") + "</span>").replace("#ADDITIONAL_CLASS#", "")%>
+													<%=String.format(popover, "<span class=\"price\">" + language.get("INDEX-4-POPOVER-BUTTON") + "</span>").replace("#ADDITIONAL_CLASS#", "")%>
 												</div>
                                             </div>
                                         </article>

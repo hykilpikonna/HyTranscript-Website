@@ -11,6 +11,8 @@ import java.util.Set;
  */
 public class Main implements ServletContextListener
 {
+    public static final String VERSION = "0.0.2";
+
     private static Main instance;
 
     public static Main getInstance()

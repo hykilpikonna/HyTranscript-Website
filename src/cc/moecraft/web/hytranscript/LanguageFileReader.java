@@ -6,6 +6,8 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import static cc.moecraft.web.hytranscript.Main.VERSION;
+
 /**
  * 此类由 Hykilpikonna 在 2018/04/17 创建!
  * Created by Hykilpikonna on 2018/04/17!
@@ -72,7 +74,7 @@ public class LanguageFileReader
 
         LanguageFile(String lang)
         {
-            super("0.0.1", "HyTranscript", "IndexLanguage@" + lang, "hylang", false, false, true);
+            super(VERSION, "HyTranscript", "IndexLanguage@" + lang, "hylang", false, false, true);
             this.lang = lang;
             writeDefaultConfig();
             save();

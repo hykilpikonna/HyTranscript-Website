@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HyTranscript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HyTranscript.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/WEB-INF/classes/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HyTranscript/cc/moecraft/web/hytranscript/LanguageFileReader$LanguageFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +23,8 @@
       <file leaf-file-name="LanguageFileReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="139" column="90" selection-start-line="139" selection-start-column="90" selection-end-line="139" selection-end-column="90" />
+            <state relative-caret-position="193">
+              <caret line="140" column="49" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#524#525#0" expanded="true" />
@@ -70,7 +62,7 @@
       <file leaf-file-name="DownloadLink.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/DownloadLink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
+            <state relative-caret-position="-78">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -79,7 +71,7 @@
       <file leaf-file-name="PostsDatabaseReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabaseReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
+            <state relative-caret-position="247">
               <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,8 +87,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="333" column="92" selection-start-line="333" selection-start-column="92" selection-end-line="333" selection-end-column="92" />
+            <state relative-caret-position="1026">
+              <caret line="369" column="54" lean-forward="true" selection-start-line="369" selection-start-column="54" selection-end-line="369" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -413,12 +405,12 @@
       <updated>1523831799994</updated>
       <workItem from="1523831806265" duration="4542000" />
       <workItem from="1523987430331" duration="18335000" />
-      <workItem from="1524048344775" duration="24346000" />
+      <workItem from="1524048344775" duration="25182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47223000" />
+    <option name="totallyTimeSpent" value="48059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -594,20 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabaseReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="658">
@@ -627,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/DownloadLink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
@@ -644,10 +615,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
+    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/PostsDatabaseReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="139" column="90" selection-start-line="139" selection-start-column="90" selection-end-line="139" selection-end-column="90" />
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/DownloadLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cc/moecraft/web/hytranscript/LanguageFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="140" column="49" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#524#525#0" expanded="true" />
@@ -660,8 +652,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="333" column="92" selection-start-line="333" selection-start-column="92" selection-end-line="333" selection-end-column="92" />
+        <state relative-caret-position="1026">
+          <caret line="369" column="54" lean-forward="true" selection-start-line="369" selection-start-column="54" selection-end-line="369" selection-end-column="54" />
         </state>
       </provider>
     </entry>
