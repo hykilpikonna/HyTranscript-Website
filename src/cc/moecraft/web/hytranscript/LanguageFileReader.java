@@ -59,7 +59,7 @@ public class LanguageFileReader
     {
         try
         {
-            System.out.println(OfficiallySupportedLanguages.valueOf(lang));
+            OfficiallySupportedLanguages.valueOf(lang);
             return true;
         }
         catch (Exception ignored)
