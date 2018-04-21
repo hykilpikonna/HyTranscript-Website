@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/HyTranscript_war_exploded/js/gmap3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mobile/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mobile/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mobile/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/mobile/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="6ffa75fe-4df2-49c5-80b7-947c00a5f858" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,26 +97,26 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="408" column="16" lean-forward="true" selection-start-line="408" selection-start-column="16" selection-end-line="427" />
+            <state relative-caret-position="938">
+              <caret line="408" column="35" selection-start-line="408" selection-start-column="35" selection-end-line="408" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/mobile/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="6574">
               <caret line="346" column="22" lean-forward="true" selection-start-line="346" selection-start-column="22" selection-end-line="346" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/mobile/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="2168" column="1" lean-forward="true" selection-start-line="2168" selection-start-column="1" selection-end-line="2168" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="2167" column="48" lean-forward="true" selection-start-line="2167" selection-start-column="48" selection-end-line="2167" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -462,16 +456,15 @@
       <workItem from="1524048344775" duration="30078000" />
       <workItem from="1524237558376" duration="1060000" />
       <workItem from="1524248088301" duration="628000" />
-      <workItem from="1524273389343" duration="1402000" />
+      <workItem from="1524273389343" duration="2286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56045000" />
+    <option name="totallyTimeSpent" value="56929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -899,24 +892,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/mobile/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="2167" column="48" lean-forward="true" selection-start-line="2167" selection-start-column="48" selection-end-line="2167" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="408" column="16" lean-forward="true" selection-start-line="408" selection-start-column="16" selection-end-line="427" />
+        <state relative-caret-position="938">
+          <caret line="408" column="35" selection-start-line="408" selection-start-column="35" selection-end-line="408" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/mobile/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="6574">
           <caret line="346" column="22" lean-forward="true" selection-start-line="346" selection-start-column="22" selection-end-line="346" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mobile/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="2168" column="1" lean-forward="true" selection-start-line="2168" selection-start-column="1" selection-end-line="2168" selection-end-column="1" />
         </state>
       </provider>
     </entry>
